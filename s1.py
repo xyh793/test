@@ -116,13 +116,3 @@ if st.button("删除"):
 # 刷新按钮
 if st.button("刷新页面"):
     st.rerun()
-def hide_github_ribbon():
-    st.markdown("""
-        <style>
-        .css-1q7spjk {
-            display: none;
-        }
-        </style>
-    """, unsafe_allow_html=True)
-
-hide_github_ribbon()
