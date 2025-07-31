@@ -1,1 +1,3 @@
-
+toml
+[client]
+showSidebarNavigation=false
