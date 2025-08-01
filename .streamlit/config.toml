@@ -1,0 +1,6 @@
+[ui]
+# 隐藏顶部栏（包括菜单、跑步者图标和 GitHub 链接）
+hideTopBar = true
+
+# 禁用 GitHub 链接
+showToolbarIcon = false
