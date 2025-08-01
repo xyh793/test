@@ -5,8 +5,18 @@ import pandas as pd
 import streamlit as st
 from datetime import datetime
 # 设置页面标题
-st.title("每月随机工时生成")
 
+# 注入自定义 CSS 隐藏 "Hosted with Streamlit" 徽标
+st.markdown("""
+    <style>
+        /* 隐藏 footer 标签中的内容 */
+        footer {
+            visibility: hidden !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+st.title("每月随机工时生成")
 
 # 获取当前日期
 current_date = datetime.now()
