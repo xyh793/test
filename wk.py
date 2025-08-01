@@ -6,14 +6,6 @@ import streamlit as st
 from datetime import datetime
 # 设置页面标题
 
-st.markdown("""
-    <style>
-        /* 隐藏页面底部的所有内容 */
-        div[data-testid="stFooter"] {
-            display: none !important;
-        }
-    </style>
-""", unsafe_allow_html=True)
 st.title("每月随机工时生成")
 
 # 获取当前日期
