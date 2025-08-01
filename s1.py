@@ -1,7 +1,15 @@
 import streamlit as st
 import pandas as pd
 import sqlite3
-
+# 注入自定义 CSS 隐藏 "Hosted with Streamlit" 徽标
+st.markdown("""
+    <style>
+        /* 隐藏右下角的 "Hosted with Streamlit" 徽标 */
+        .css-15zrgzn {display: none}
+        /* 或者使用更通用的选择器 */
+        footer {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
 # 设置页面标题
 st.set_page_config(page_title="在线文档", page_icon="📝")
 
