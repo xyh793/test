@@ -7,19 +7,13 @@ from datetime import datetime
 # 设置页面标题
 import streamlit as st
 
-# 自定义 CSS 隐藏右下角的标志
-st.markdown(
-    """
-    <style>
-        .css-15zrgzn {display: none}  /* 隐藏 Hosted with Streamlit 标志 */
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
+from streamlit.components.v1 import html
+    html('''
+       <script>
+        window.top.document.querySelectorAll(`[href*="streamlit.io"]`).forEach(e => e.setAttribute("style", "display: none;"));
+      </script>
+    ''')
 # 主程序内容
-st.title("我的 Streamlit 应用")
-st.write("这是一个示例应用，右下角的 'Hosted with ❤️ by Streamlit' 已被隐藏。")
 st.title("每月随机工时生成")
 
 # 获取当前日期
