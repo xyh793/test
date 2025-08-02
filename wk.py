@@ -7,13 +7,6 @@ from datetime import datetime
 # 设置页面标题
 import streamlit as st
 
-from streamlit.components.v1 import html
-    html('''
-       <script>
-        window.top.document.querySelectorAll(`[href*="streamlit.io"]`).forEach(e => e.setAttribute("style", "display: none;"));
-      </script>
-    ''')
-# 主程序内容
 st.title("每月随机工时生成")
 
 # 获取当前日期
