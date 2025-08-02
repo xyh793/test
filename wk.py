@@ -82,5 +82,5 @@ st.download_button(
     file_name=f"{year}_{month}_calendar_data.csv",
     mime="text/csv"
 )
-if st.button('刷新')
+if st.button('刷新'):
     st.rerun()
