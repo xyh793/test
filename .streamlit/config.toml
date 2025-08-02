@@ -5,4 +5,5 @@ hideTopBar = true
 # 禁用 GitHub 链接
 showToolbarIcon = false
 hideFooter = true
+[client]
 toolbarMode= "minimal"
